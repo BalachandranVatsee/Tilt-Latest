@@ -1,0 +1,58 @@
+<svg width="1600" height="600" viewBox="-50 -100 1600 399" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .custom-font {
+      font-family: heading_pro_double_trialHvIt, Helvetica, Arial, sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 240px;
+      fill: white;
+      margin-top: 0;
+    }
+    .custom-font-two {
+      font-family: heading_pro_double_trialHvIt, Helvetica, Arial, sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 240px;
+      fill: none; /* Set fill color to match text */
+      stroke: #ffdd00; /* Outline color */
+      stroke-width: 1px; /* Outline width */
+    }
+  </style>
+
+  <text x="50" y="120" class="custom-font">
+    Hari
+  </text>
+
+<text x="620" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">G</text>
+<text x="640" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">R</text>
+<text x="660" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">O</text>
+<text x="680" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">U</text>
+<text x="700" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">P</text>
+
+<text x="730" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">C</text>
+<text x="750" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">H</text>
+<text x="770" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">I</text>
+<text x="780" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">E</text>
+<text x="800" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">F</text>
+
+<text x="830" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">B</text>
+<text x="850" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">U</text>
+<text x="870" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">S</text>
+<text x="890" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">I</text>
+<text x="900" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">N</text>
+<text x="920" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">E</text>
+<text x="940" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">S</text>
+<text x="960" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">S</text>
+
+<text x="990" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">O</text>
+<text x="1010" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">F</text>
+<text x="1030" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">F</text>
+<text x="1050" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">I</text>
+<text x="1060" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">C</text>
+<text x="1080" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">E</text>
+<text x="1100" y="120" height="80" font-family="Arial" font-size="17" fill="#FFD400">R</text>
+
+  <text x="320" y="315" class="custom-font-two" style="left: -30%;">
+    Krishnan
+  </text>
+</svg>

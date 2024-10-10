@@ -1,0 +1,53 @@
+<svg width="1600" height="600" viewBox="-50 -100 1300 399" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .custom-font {
+      font-family: heading_pro_double_trialHvIt, Helvetica, Arial, sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 240px;
+      fill: white;
+      margin-top: 0;
+    }
+    .custom-font-two {
+      font-family: heading_pro_double_trialHvIt, Helvetica, Arial, sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 240px;
+      fill: none; /* Set fill color to match text */
+      stroke: #ffdd00; /* Outline color */
+      stroke-width: 1px; /* Outline width */
+    }
+
+    
+  </style>
+
+  <text x="50" y="120" class="custom-font">
+    Joseph 
+  </text>
+
+<text x="510" y="-80" height="80" font-family="Arial" font-size="23" fill="#FFD400">G</text>
+<text x="532" y="-80" height="80" font-family="Arial" font-size="23" fill="#FFD400">R</text>
+<text x="554" y="-80" height="80" font-family="Arial" font-size="23" fill="#FFD400">O</text>
+<text x="576" y="-80" height="80" font-family="Arial" font-size="23" fill="#FFD400">U</text>
+<text x="598" y="-80" height="80" font-family="Arial" font-size="23" fill="#FFD400">P</text>
+
+<text x="638" y="-80" height="80" font-family="Arial" font-size="23" fill="#FFD400">C</text>
+<text x="660" y="-80" height="80" font-family="Arial" font-size="23" fill="#FFD400">H</text>
+<text x="682" y="-80" height="80" font-family="Arial" font-size="23" fill="#FFD400">A</text>
+<text x="704" y="-80" height="80" font-family="Arial" font-size="23" fill="#FFD400">I</text>
+<text x="717" y="-80" height="80" font-family="Arial" font-size="23" fill="#FFD400">R</text>
+<text x="739" y="-80" height="80" font-family="Arial" font-size="23" fill="#FFD400">M</text>
+<text x="761" y="-80" height="80" font-family="Arial" font-size="23" fill="#FFD400">A</text>
+<text x="783" y="-80" height="80" font-family="Arial" font-size="23" fill="#FFD400">N</text>
+
+<text x="823" y="-80" height="80" font-family="Arial" font-size="23" fill="#FFD400">&#38;</text>
+
+<text x="863" y="-80" height="80" font-family="Arial" font-size="23" fill="#FFD400">C</text>
+<text x="885" y="-80" height="80" font-family="Arial" font-size="23" fill="#FFD400">E</text>
+<text x="907" y="-80" height="80" font-family="Arial" font-size="23" fill="#FFD400">O</text>
+
+
+  <text x="50" y="315" class="custom-font-two">
+    George
+  </text>
+</svg>

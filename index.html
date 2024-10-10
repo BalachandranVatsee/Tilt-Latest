@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="icon" type="images/x-icon" href="wp-content/themes/tilt/img/svg/logo.svg">
+    <title>Tilt Brand Solutions</title>
+    <!-- Google tag (gtag.js) -->
+   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-2J3VPQ40BG"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2J3VPQ40BG');
+</script> -->
+
+  </head>
+  <body>
+    <div id="closeyoutube" style="display: none;">
+      <span class="close-yt-playlist"><span onclick="closeYoutubePlaylist()">&times;</span></span>
+    </div>
+    <div id="youtubePlayer" class="fixed-youtube-player" style="display: none;">
+      
+      <iframe class="youtubeFrame-wh" id="playlistEmbed" frameborder="0" allowfullscreen></iframe>
+    
+  </div>
+
+    <div id="playlistPopup" class="modal-yt" style="display: block;">
+      <div class="modal-content-yt">
+          <span class="close-yt"><span onclick="closePlaylistPopup()">&times;</span></span>
+          <h3 class="modal-yt-heading">View Our Showreel</h3>
+          <p class="moday-yt-para">Creativity can solve for anything and everything. Almost every time. See how we've used it to our Client's advantage.</p>
+          <div class="modal-yt-logo">
+          <img class="You-Tube-Logo-img" src="wp-content/uploads/YouTubeLogo/youtube.png" alt="You-Tube-Logo" onclick="openYoutubePlaylist()">
+          </div>
+          <!-- <iframe id="playlistEmbed" width="560" height="315" frameborder="0" allowfullscreen></iframe> -->
+          <!-- Embed YouTube playlist -->
+          <!-- <iframe id="playlistEmbed" width="560" height="315" frameborder="0" allowfullscreen></iframe> -->
+      </div>
+  </div>
+
+
+    <div id="cookie-popup" class="cookie-popup">
+      <div class="cookie-content">
+        <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12 cookieTextPadding">
+          <p class="cookieHead">Cookies & Privacy</p>
+          <p class="cookieText">This website uses cookies to ensure you get the best experience on our website.</p>
+    
+          
+            <p class="privacyTxt">By clicking “Accept”, you agree to the use of all of these cookies in accordance with our <a href="privacy.html">Cookie Policy.</a></p>
+    
+        </div>
+  
+        <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12 cookiePadding">
+          <div class="cookieButton">
+            <button id="accept-cookie" onclick="acceptCookies()">Accept</button>
+           
+            </div>
+        </div>
+        <span id="close-cookie" onclick="closePopup()">x</span>
+         
+        
+       
+      </div>
+    </div>
+    <div id="page" class="site">
+      <header>
+        <div class="container-fluid padding-0">
+          <div class="row padding-0">
+            <div class="col-6 col-lg-3 padding-0 order-3 order-lg-1">
+              <div class="logo">
+                <a href="index.html">
+                  <img
+                    src="wp-content/themes/tilt/img/svg/logo.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-lg-6 padding-0 order-4 order-lg-2">
+              <div class="about-top">
+                  <div class="front">
+                      <img class="dsk" src="wp-content/themes/tilt/img/about-1.svg" alt="">
+                      <img class="mbl" src="wp-content/themes/tilt/img/about-1.png" alt="">
+                  </div>
+                  <div class="back">
+                      <img class="dsk" src="wp-content/themes/tilt/img/about-2.svg" alt="">
+                      <img class="mbl" src="wp-content/themes/tilt/img/about-2.png" alt="">
+                  </div>
+              </div>
+          </div>
+
+            <div
+              class="col-12 col-lg-3 padding-0 order-1 order-lg-4 mb-4 mb-lg-0 black-bg"
+            >
+              <div class="menubox">
+                
+                <a class="hamburger fixed-hamburger">
+                  
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 24">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: none;
+                          stroke: currentColor;
+                          stroke-linecap: round;
+                          stroke-miterlimit: 10;
+                          stroke-width: 4px;
+                        }
+                      </style>
+                    </defs>
+                    <g id="Layer_2" data-name="Layer 2">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <line
+                          class="cls-1"
+                          x1="11"
+                          y1="2"
+                          x2="2"
+                          y2="22"
+                        ></line>
+                        <line
+                          class="cls-1"
+                          x1="21"
+                          y1="2"
+                          x2="11"
+                          y2="22"
+                        ></line>
+                        <line
+                          class="cls-1"
+                          x1="30"
+                          y1="2"
+                          x2="21"
+                          y2="22"
+                        ></line>
+                        <line
+                          class="cls-1"
+                          x1="39"
+                          y1="2"
+                          x2="30"
+                          y2="22"
+                        ></line>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav class="nav-menu">
+        <ul class="menu">
+          
+          <li>
+            <a href="leadership.html"> Leadership Team </a>
+          </li>
+          <li>
+            <a href="dna&values.html"> DNA &amp; VALUES </a>
+          </li>
+          <li>
+            <a href="work.html?tab=new"> OUR WORK </a>
+          </li>
+          <li>
+            <a href="BrandT.html"> OFFERINGS </a>
+          </li>
+          <li>
+            <a href="clients.html"> CLIENTS </a>
+          </li>
+          <li>
+            <a href="news.html"> NEWS &amp; BLOGS </a>
+          </li>
+          <li>
+            <a href="contact.html"> Connect with us </a>
+          </li>
+        </ul>
+        
+      </nav>
+      <main class="container-fluid padding-0">
+        
+        <section class="top-section">
+          <div class="row about-tilt padding-0">
+            <div class="col-12 col-md-9 padding-0">
+              
+              <div class="work-text">
+                <p>
+                  Born in August 2018, Tilt offers ambitious brand and business
+                  owners, Strategy, Creative, Digital, Content and Production
+                  services
+                  <img
+                    src="wp-content/themes/tilt/img/sapretor.png"
+                    alt=""
+                  />
+                </p>
+              </div>
+            </div>
+            <div class="col-3 padding-0"></div>
+          </div>
+
+          
+        </section>
+        <div class="swiper workSwiper swiper-container-initialized swiper-container-horizontal">
+          <div class="swiper-wrapper" id="swiper-wrapper-ac2443bea15e7379" aria-live="off" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+              <div class="swiper-slide swiper-slide-prev" style="width: 100%;margin-right: 15px;" role="group" aria-label="1 / 3">
+                                      <div class="row work-section padding-0">
+                      <a href="work.html?tab=new" class="col-lg-12 padding-0 work-video">
+                          <!-- <img src="wp-content/uploads/2023/10/DREAM 11 - ThodaExtra - SUMO.jpg" width="100%"> -->
+                          <img src="wp-content/uploads/2024/06/19/Myntra EORS - Karan  Shahrukh.png" width="100%">
+                          <h3 class="work-title-img work-title-img-1">
+                              <img src="wp-content/themes/tilt/img/home-banner-02.svg" alt="">
+                          </h3>
+                      </a>
+                  </div>
+                  
+              </div>
+              <div class="swiper-slide swiper-slide-active" style="width: 100%; margin-right: 15px;" role="group" aria-label="2 / 3">
+                                      <div class="row work-section padding-0">
+                      <a href="work.html?tab=recent" class="col-lg-12 padding-0 work-video">
+                          <img src="wp-content/uploads/2023/06/recent-work-1-e1687849005368.jpeg" width="100%">
+                          <h3 class="work-title-img work-title-img-2">
+                              <img src="wp-content/themes/tilt/img/home-banner-03.svg" alt="">
+                          </h3>
+                      </a>
+                  </div>
+                  
+              </div>
+              <div class="swiper-slide swiper-slide-next" role="group" aria-label="3 / 3" style="width: 100%; margin-right: 15px;">
+                                      <div class="row work-section padding-0">
+                      <a href="work.html?tab=past" class="col-lg-12 padding-0 work-video">
+                          <img src="wp-content/uploads/2023/06/past-work.jpg" width="100%">
+                          <h3 class="work-title-img work-title-img-3">
+                              <img src="wp-content/themes/tilt/img/home-banner-01.svg" alt="">
+                          </h3>
+                      </a>
+                  </div>
+                  
+              </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        
+        <section class="section offerings">
+          <div class="row padding-0">
+            <div class="col-12 padding-0">
+              <img
+                src="wp-content/themes/tilt/img/svg/offerings.svg"
+                width="100%"
+                class="desktop-img"
+              />
+              <img
+                src="wp-content/themes/tilt/img/our-offerings.svg"
+                width="100%"
+                class="mob-img"
+              />
+            </div>
+          </div>
+        </section>
+        
+        <section class="section bnc padding-0">
+          <div class="row padding-0 flex-grow-1 z-index-1">
+            <div class="col-6 padding-0 cursor-pointer yellow">
+              <a href="BrandT.html"
+                ><img
+                  src="wp-content/themes/tilt/img/BrandT-small-bk.svg"
+                  width="100%"
+              /></a>
+              
+            </div>
+            <div class="col-6 padding-0 cursor-pointer black">
+              <a href="commsT.html"
+                ><img
+                  src="wp-content/themes/tilt/img/CommsT-small.svg"
+                  width="100%"
+              /></a>
+              
+            </div>
+            <div class="col-6 padding-0 cursor-pointer black">
+              <a href="digiq.html"
+                ><img
+                  src="wp-content/themes/tilt/img/DigiT-small.svg"
+                  width="100%"
+                  class="digi-t"
+              /></a>
+              
+            </div>
+            <div class="col-6 padding-0 cursor-pointer yellow">
+              <a href="studioq.html"
+                ><img
+                  src="wp-content/themes/tilt/img/StudioT-small-bk.svg"
+                  width="100%"
+              /></a>
+              
+            </div>
+          </div>
+          <div class="section-title-img">
+            <img
+              src="wp-content/themes/tilt/img/bnc.svg"
+              width="100%"
+            />
+          </div>
+          <div class="content-modal row padding-0">
+            <div class="inner-modal brand yellow" id="brand">
+              <div class="close-icon" onclick="closeModal('brand');">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fal"
+                  data-icon="times"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                  class="svg-inline--fa fa-times fa-w-10"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                    class=""
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="content-title">Brand<span>T</span></h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptas tempore, ullam voluptates veritatis itaque delectus
+                ratione autem excepturi.
+                <a href="#">Read more...</a>
+              </p>
+            </div>
+            <div class="inner-modal comms black" id="comms">
+              <div class="close-icon" onclick="closeModal('comms');">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fal"
+                  data-icon="times"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                  class="svg-inline--fa fa-times fa-w-10"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                    class=""
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="content-title">Comms<span>T</span></h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptas tempore, ullam voluptates veritatis itaque delectus
+                ratione autem excepturi.
+                <a href="#">Read more...</a>
+              </p>
+            </div>
+            <div class="inner-modal digi black" id="digi">
+              <div class="close-icon" onclick="closeModal('digi');">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fal"
+                  data-icon="times"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                  class="svg-inline--fa fa-times fa-w-10"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                    class=""
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="content-title">Digi<span>T</span></h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptas tempore, ullam voluptates veritatis itaque delectus
+                ratione autem excepturi.
+                <a href="#">Read more...</a>
+              </p>
+            </div>
+            <div class="inner-modal studio yellow" id="studio">
+              <div class="close-icon" onclick="closeModal('studio');">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fal"
+                  data-icon="times"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                  class="svg-inline--fa fa-times fa-w-10"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                    class=""
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="content-title">Studio<span>T</span></h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptas tempore, ullam voluptates veritatis itaque delectus
+                ratione autem excepturi.
+                <a href="#">Read more...</a>
+              </p>
+            </div>
+          </div>
+        </section>
+        
+        <section class="section newsnblog padding-0">
+          <div class="row padding-0 newsnblogrow cursor-pointer">
+            <div class="col-6 padding-0 m-auto newsnblog-title">
+              <a href="news.html" target="_blank"
+                ><img
+                  src="wp-content/themes/tilt/img/newsnblog-Desktop.svg"
+                  width="100%"
+                  class="desktop-img"
+              /></a>
+              <a href="news.html" target="_blank"
+                ><img
+                  src="wp-content/themes/tilt/img/newsnblog-mobile.svg"
+                  width="100%"
+                  class="mob-img"
+              /></a>
+            </div>
+            <div class="col-6 padding-0">
+              <a href="news.html" target="_blank"
+                ><img
+                  src="wp-content/themes/tilt/img/newsnblog-img.jpg"
+                  width="100%"
+                  class="desktop-img"
+              /></a>
+              <a href="news.html" target="_blank"
+                ><img
+                  src="wp-content/themes/tilt/img/newsnblog-img-mob.jpg"
+                  width="100%"
+                  class="mob-img"
+              /></a>
+            </div>
+          </div>
+          <div class="content-modal-swiper row padding-0">
+            <div class="swiper-modal">
+              <img
+                src="wp-content/themes/tilt/img/newsnblog.png"
+                width="100%"
+                class="section-name"
+              />
+              <div class="close-icon" onclick="closeSwiperModal();">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fal"
+                  data-icon="times"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                  class="svg-inline--fa fa-times fa-w-10"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                    class=""
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="swiper newsSwiper swiper-container-initialized swiper-container-horizontal"
+              >
+                <div
+                  class="swiper-wrapper"
+                  id="swiper-wrapper-2fd115bf456fbf25"
+                  aria-live="polite"
+                  style="transition-duration: 0ms"
+                >
+                  <div class="swiper-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30"
+                    />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
+                    <a href="#">Read more</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30"
+                    />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
+                    <a href="#">Read more</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30"
+                    />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
+                    <a href="#">Read more</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30"
+                    />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
+                    <a href="#">Read more</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30"
+                    />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
+                    <a href="#">Read more</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30"
+                    />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
+                    <a href="#">Read more</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30"
+                    />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
+                    <a href="#">Read more</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30"
+                    />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
+                    <a href="#">Read more</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30"
+                    />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
+                    <a href="#">Read more</a>
+                  </div>
+                </div>
+                <div
+                  class="swiper-button-next"
+                  tabindex="0"
+                  role="button"
+                  aria-label="Next slide"
+                  aria-controls="swiper-wrapper-2fd115bf456fbf25"
+                  aria-disabled="false"
+                ></div>
+                <div
+                  class="swiper-button-prev"
+                  tabindex="0"
+                  role="button"
+                  aria-label="Previous slide"
+                  aria-controls="swiper-wrapper-2fd115bf456fbf25"
+                  aria-disabled="false"
+                ></div>
+                <span
+                  class="swiper-notification"
+                  aria-live="assertive"
+                  aria-atomic="true"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+      </main>
+      <script>
+                
+      </script>
+
+<footer class="container-fluid">
+	<div class="row padding-0 footer">
+		<div class="col-12 col-sm-12 col-lg-12 footer-work padding-0">
+			<div class="work-text">
+				<p>
+					Born in August 2018, we offer ambitious brand and business owners, Strategy, Creative, Digital, Content and Production services. <img src="wp-content/themes/tilt/img/sapretor.png" alt="">
+				</p>
+            </div>
+		</div>
+		<div class="col-6 col-sm-6 col-lg-6 footer-address padding-0 ">
+			<div class="ft-box">
+				<h3>CONNECT <span>WITH US</span></h3>
+        <div class="footer-socialMedia">
+				<p>
+					<a href="https://www.facebook.com/tiltbrands" class="social-icons"><img src="wp-content/themes/tilt/img/Social-01.svg"></a> <span>TILT BRAND SOLUTIONS PVT. LTD.</span><br>
+					<a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F14453073%2Fadmin%2F" class="social-icons"><img src="wp-content/themes/tilt/img/Social-02.svg"></a> #503 Peninsula Towers, Peninsula Corporate Park,<br>
+					<a href="https://www.instagram.com/tiltbrands/" class="social-icons"><img src="wp-content/themes/tilt/img/Social-03.svg"></a> Lower Parel, Mumbai - 400013.<br>
+					<a href="#" class="social-icons"><img src="wp-content/themes/tilt/img/Social-04.svg"></a> P: +91-22-46723400
+				</p>
+				<div class="social-icons mobile-social">
+					<a href="https://www.facebook.com/tiltbrands"><img src="wp-content/themes/tilt/img/Social-01.svg"></a>
+					<a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F14453073%2Fadmin%2F"><img src="wp-content/themes/tilt/img/Social-02.svg"></a>
+					<a href="https://www.instagram.com/tiltbrands/"><img src="wp-content/themes/tilt/img/Social-03.svg"></a>
+					<a href="#"><img src="wp-content/themes/tilt/img/Social-04.svg"></a>
+				</div>
+        </div>
+				<p class="copy">© Copyright Tilt Brand Solutions. All rights reserved. We do not claim ownership of Client logos, brands, or trademarks featured on this site. All rights to these logos, brands, and trademarks are reserved by their respective legal entities.</p>
+
+			</div>
+		</div>
+		<div class="col-6 col-sm-6 col-lg-6 footer-email padding-0">
+			<div class="ft-side">
+				<h3>ENQUIRIES</h3>
+				<ul>
+					<li>
+						<span> BUSINESS </span> new.client@tiltbrands.in <br>+91 98100 04274 
+					</li>
+					<li>
+						<span> CAREERS </span> careers@tiltbrands.in <br>+91 99673 79257
+					</li>
+					<li>
+						<span> MEDIA </span> media.enquiries@tiltbrands.in <br>+91 99451 77747
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+	</div>
+</footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script> 
+    
+  </body>
+</html>
